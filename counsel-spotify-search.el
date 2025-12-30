@@ -132,7 +132,7 @@
   "Parse every item in A-SPOTIFY-ALIST-RESPONSE as being of the type A-TYPE."
   (let ((items (alist-get 'items (alist-get a-type a-spotify-alist-response))))
     (mapcar (lambda (item) (counsel-spotify-parse-spotify-object item a-type))
-            items)))
+            (seq-filter #'identity items))))
 
 (defun counsel-spotify-parse-response (a-spotify-alist-response)
   "Parse A-SPOTIFY-ALIST-RESPONSE iterating through every category."

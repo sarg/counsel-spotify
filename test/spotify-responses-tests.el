@@ -181,7 +181,7 @@
 {
   \"playlists\" : {
     \"href\" : \"https://api.spotify.com/v1/search?query=Atila&type=playlist&offset=0&limit=1\",
-    \"items\" : [ {
+    \"items\" : [ null, {
       \"collaborative\" : false,
       \"description\" : \"\",
       \"external_urls\" : {
@@ -222,7 +222,7 @@
       },
       \"type\" : \"playlist\",
       \"uri\" : \"spotify:playlist:6ROecAB4Ksv6MJKyhFchKH\"
-    } ],
+    }, null ],
     \"limit\" : 1,
     \"next\" : \"https://api.spotify.com/v1/search?query=Atila&type=playlist&offset=1&limit=1\",
     \"offset\" : 0,
